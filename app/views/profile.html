@@ -1,0 +1,11 @@
+<main class="profile" ng-controller="pCtrl">
+    <div class="body">
+        <div class="user">
+            <div class="user_block" ng-model="userPhoto" ng-model="userData"><img src={{userPhoto}}>{{ userData }}</div>
+        </div>
+        <div class="friends">
+            <div class="friends_item" ng-repeat="friend in friendList"><img src={{friend.Photo}}>{{ friend.Fullname }}</div>
+        </div>
+    </div>
+</main>
+
